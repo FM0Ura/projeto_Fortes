@@ -1,24 +1,26 @@
 /*Fontes importadas*/
 
-/*Poppins*/ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*font-family: 'Poppins', sans-serif;*/
 
-/*PT Serif*/ @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/*PT Serif*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /*font-family: 'PT Serif', serif;*/
 
 /*Universal*/
-html{
+html {
     scroll-behavior: smooth;
 }
 
-*{
+* {
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
-    
+
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     background-color: white;
@@ -37,7 +39,7 @@ header {
     justify-content: center;
 }
 
-body div{
+body div {
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -46,55 +48,55 @@ body div{
 
 }
 
-#cabecalho{
+#cabecalho {
     position: relative;
     display: flex;
-    flex-direction:row-reverse;
+    flex-direction: row-reverse;
 }
 
-.logo{
-    width: 250px ;
+.logo {
+    width: 250px;
     position: absolute;
-    left:80vh;
+    left: 80vh;
 
 }
 
-#foto{
+#foto {
     width: 70px;
     height: 70px;
     border-radius: 50%;
 }
 
-#ON-OFF{
+#ON-OFF {
     width: 40px;
     height: 40px;
 }
 
-.icon{
+.icon {
     width: 30px;
     height: 30px;
 }
 
-#menu{
+#menu {
     position: absolute;
     width: 30px;
     height: 30px;
     right: 10px;
 }
 
-#box{
+#box {
     width: 30%;
     height: 100%;
 
 }
 
-#botao{
+#botao {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
 }
 
-#box3{
+#box3 {
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -106,8 +108,8 @@ body div{
 
 /*Barra de Navegação*/
 
-#box2{
-    background-color:white;
+#box2 {
+    background-color: white;
 }
 
 #barra_navegacao {
@@ -121,7 +123,7 @@ body div{
     position: relative;
 }
 
-ul{
+ul {
     width: 93%;
     height: 100%;
     display: flex;
@@ -131,7 +133,7 @@ ul{
 
 }
 
-li{
+li {
     width: 100%;
     height: 100%;
     list-style-type: none;
@@ -144,20 +146,125 @@ li{
     font-family: 'Poppins', sans-serif;
 }
 
-.guia{
+.guia {
     border-right: 1px solid black;
-    padding-left: 14px ;
+    padding-left: 14px;
 }
 
-.guia:nth-last-child(1){
+.guia:nth-last-child(1) {
     border-right: 0px solid black;
 }
 
-.guia:nth-child(1){
+.guia:nth-child(1) {
     padding: 0px;
 }
 
+.menu-vertical{
+    display: none;
+}
+
 /*FIM - Barra de Navegação*/
+
+/*Barra de Navegação Mobile*/
+
+@media (max-width:800px) {
+    .menu {
+        height: 12vmax;
+    }
+}
+
+@media (min-width:100px) and (max-width:1000px) {
+
+    .conteudo {
+        width: 95%;
+    }
+
+    .menu2 {
+        width: fit-content;
+    }
+
+    #foto {
+        width: 80%;
+        display: inline;
+    }
+
+    .menu {
+        height: 110px;
+    }
+
+    #box2 {
+        display: none;
+    }
+
+    .menu-vertical {
+        display: block;
+        width: 100%;
+        margin: auto;
+        position: fixed;
+        color: black;
+        border-radius: 10px;
+        height: 90px;
+    }
+
+    .topnav {
+        position: absolute;
+        overflow: hidden;
+        background-color: #D9D9D9;
+        position: relative;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .topnav a.icon {
+        background: #D9D9D9;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav a:hover {
+        height: 90px;
+        background-color: #D9D9D9;
+        color: aliceblue;
+    }
+
+    .active {
+        color: #202022;
+    }
+
+    .imga {
+        width: 80%;
+    }
+
+    .imgv {
+        width: 40px;
+    }
+
+    .logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    footer {
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+/*FIM - Barra de Navegação Mobile*/
 
 /*Parte principal*/
 
@@ -168,23 +275,23 @@ main {
     flex-direction: row;
 }
 
-#area_geral{
-    width:85%;
+#area_geral {
+    width: 85%;
     height: 100%;
-    background-color: #e5ffff;
+    background-color: white;
     display: flex;
     flex-direction: column;
 }
 
-#noticias{
+#noticias {
     width: 100%;
     height: 100%;
-    
+
 }
 
 /*Caixas de noticias*/
 
-.noticia{
+.noticia {
     width: 20%;
     height: 60%;
     border-radius: 30px;
@@ -192,11 +299,11 @@ main {
     display: flex;
     flex-direction: column;
     margin-right: 40px;
-    justify-content:end;
+    justify-content: end;
 
 }
 
-.info{
+.info {
     width: 100%;
     height: 40%;
     border-radius: 30px;
@@ -205,19 +312,19 @@ main {
     flex-direction: column;
     align-items: start;
     padding: 20px;
-    
+
 }
 
 /*FIM - Caixa de noticias*/
 
 /*Caixa de eventos*/
 
-#eventos{
+#eventos {
     width: 100%;
     height: 100%;
 }
 
-.evento{
+.evento {
     width: 20%;
     height: 60%;
     border-radius: 30px;
@@ -225,17 +332,17 @@ main {
     display: flex;
     flex-direction: column;
     margin-right: 40px;
-    justify-content:end;
+    justify-content: end;
 }
 
 /*FIM - Caixa de eventos*/
 
 /*Área Lateral*/
 
-#area_lateral{
+#area_lateral {
     width: 15%;
     height: 100%;
-    background-color:#262626 ;
+    background-color: #262626;
     color: white;
     display: flex;
     flex-direction: column;
@@ -245,7 +352,7 @@ main {
     font-size: 18pt;
 }
 
-#lista{
+#lista {
     margin-top: 10px;
     background-color: #D9D9D9;
     width: 85%;
@@ -265,7 +372,7 @@ main {
     opacity: 40%;
 }
 
-.lista_evento{
+.lista_evento {
     width: 100%;
     color: black;
     padding-top: 10px;
@@ -277,20 +384,20 @@ main {
 
 }
 
-hr{
+hr {
     width: 80%;
     height: 1px;
     background-color: black;
     border: 0;
 }
 
-#calendar{
+#calendar {
     width: 95%;
     height: 50%;
 
 }
 
-#calendar img{
+#calendar img {
     width: 100%;
     height: 100%;
 
@@ -303,29 +410,29 @@ hr{
 footer {
     width: 100%;
     height: 10vh;
-    background-color:#D9D9D9;
+    background-color: #D9D9D9;
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-footer img{
+footer img {
     width: 200px;
 }
 
-.details{
+.details {
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
 
-.details h3{
+.details h3 {
     font-family: 'PT Serif', serif;
     font-size: medium;
 }
 
-.details p{
+.details p {
     font-family: 'Poppins', sans-serif;
     font-size: small;
 }
