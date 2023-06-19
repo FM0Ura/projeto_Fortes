@@ -268,9 +268,9 @@ body{
 
 
 .sidebar{
-    border-radius: 10px;
+    border-radius: 0px 10px 10px 0px;
     background-color: #262626;
-    width: 20%;
+    width: 25%;
     height: 100%;
 }
 .sidebarmain{
@@ -279,10 +279,33 @@ body{
     align-items: flex-start;
     flex-direction: column;
     height: 400px;
-    justify-content: space-evenly;    
+    justify-content: space-around;    
 }
-.sidebarmain button{
+.iconessb img{
+    padding-left: 20%;
+    height: 35px;
+}
+.iconessb{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.sidebarmain p{
+    padding-left: 5%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
     width: 70%;
+}
+.voltar{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    transform: translateX(-5%);
+}
+.voltar img{
+    height: 28px;
 }
 
 .main{
@@ -360,7 +383,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 85%;
-    padding-left: 15%;
+    padding-left: 20%;
     
 }
 .nomer{
@@ -377,6 +400,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .resultados img{
+    width: 98px;
     height: 98px;
     border-radius: 75%;
 }
