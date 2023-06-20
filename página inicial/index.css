@@ -1,29 +1,28 @@
 /*Fontes importadas*/
 
 /*Poppins*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /*font-family: 'Poppins', sans-serif;*/
 
 /*PT Serif*/
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 /*font-family: 'PT Serif', serif;*/
 
 /*Universal*/
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0%;
-    margin: 0%;
-
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
 }
 
 body {
-    width: 100%;
-    height: 100vh;
-    background-color: white;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
 }
 
 /*FIM - Universal*/
@@ -31,77 +30,74 @@ body {
 /*Cabeçalho*/
 
 header {
-    width: 90%;
-    height: 13vh;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 90%;
+  height: 13vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body div {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    display: flex;
-
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  display: flex;
 }
 
 #cabecalho {
-    position: relative;
-    display: flex;
-    flex-direction: row-reverse;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .logo {
-    width: 250px;
-    position: absolute;
-    left: 80vh;
-
+  width: 250px;
+  position: absolute;
+  left: 80vh;
 }
 
 #foto {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
 }
 
 #ON-OFF {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .icon {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 #menu {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    right: 10px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 10px;
 }
 
 #box {
-    width: 30%;
-    height: 100%;
-
+  width: 30%;
+  height: 100%;
 }
 
 #botao {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 
 #box3 {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /*FIM - Cabeçalho*/
@@ -109,210 +105,122 @@ body div {
 /*Barra de Navegação*/
 
 #box2 {
-    background-color: white;
+  background-color: white;
 }
 
 #barra_navegacao {
-    width: 80%;
-    height: 6vh;
-    background-color: #D9D9D9;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  width: 80%;
+  height: 6vh;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 ul {
-    width: 93%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
+  width: 93%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 li {
-    width: 100%;
-    height: 100%;
-    list-style-type: none;
-    font-family: 'Inter', sans-serif;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  font-family: "Inter", sans-serif;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .guia {
-    border-right: 1px solid black;
-    padding-left: 14px;
+  border-right: 1px solid black;
+  padding-left: 14px;
 }
 
 .guia:nth-last-child(1) {
-    border-right: 0px solid black;
+  border-right: 0px solid black;
 }
 
 .guia:nth-child(1) {
-    padding: 0px;
-}
-
-.menu-vertical{
-    display: none;
+  padding: 0px;
 }
 
 /*FIM - Barra de Navegação*/
 
-/*Barra de Navegação Mobile*/
-
-@media (max-width:800px) {
-    .menu {
-        height: 12vmax;
-    }
-}
-
-@media (min-width:100px) and (max-width:1000px) {
-
-    .conteudo {
-        width: 95%;
-    }
-
-    .menu2 {
-        width: fit-content;
-    }
-
-    #foto {
-        width: 80%;
-        display: inline;
-    }
-
-    .menu {
-        height: 110px;
-    }
-
-    #box2 {
-        display: none;
-    }
-
-    .menu-vertical {
-        display: block;
-        width: 100%;
-        margin: auto;
-        position: fixed;
-        color: black;
-        border-radius: 10px;
-        height: 90px;
-    }
-
-    .topnav {
-        position: absolute;
-        overflow: hidden;
-        background-color: #D9D9D9;
-        position: relative;
-    }
-
-    .topnav #myLinks {
-        display: none;
-    }
-
-    .topnav a {
-        color: black;
-        padding: 14px 16px;
-        text-decoration: none;
-        display: block;
-        font-size: 30px;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-
-    .topnav a.icon {
-        background: #D9D9D9;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .topnav a:hover {
-        height: 90px;
-        background-color: #D9D9D9;
-        color: aliceblue;
-    }
-
-    .active {
-        color: #202022;
-    }
-
-    .imga {
-        width: 80%;
-    }
-
-    .imgv {
-        width: 40px;
-    }
-
-    .logo {
-        width: 100%;
-        height: 100%;
-    }
-
-    footer {
-        width: 100%;
-        height: fit-content;
-    }
-}
-
-/*FIM - Barra de Navegação Mobile*/
-
 /*Parte principal*/
 
 main {
-    width: 100%;
-    height: 70vh;
-    display: flex;
-    flex-direction: row;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
 }
 
 #area_geral {
-    width: 85%;
-    height: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
+  width: 85%;
+  height: 100%;
+  background-color: #e5ffff;
+  display: flex;
+  flex-direction: column;
 }
 
 #noticias {
-    width: 100%;
-    height: 100%;
-
+  width: 100%;
+  height: 100%;
 }
 
 /*Caixas de noticias*/
 
-.noticia {
-    width: 20%;
-    height: 60%;
-    border-radius: 30px;
-    background-color: purple;
-    display: flex;
-    flex-direction: column;
-    margin-right: 40px;
-    justify-content: end;
-
+#noticia1 {
+  width: 20%;
+  height: 60%;
+  border-radius: 30px;
+  background-image: url(./img/n1.jpg);
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  justify-content: end;
 }
-
+#noticia2 {
+  width: 20%;
+  height: 60%;
+  border-radius: 30px;
+  background-image: url(./img/n2.jpg);
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  justify-content: end;
+}
+#noticia3 {
+  width: 20%;
+  height: 60%;
+  border-radius: 30px;
+  background-image: url(./img/n3.jpg);
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  justify-content: end;
+}
 .info {
-    width: 100%;
-    height: 40%;
-    border-radius: 30px;
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding: 20px;
-
+  width: 100%;
+  height: 40%;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+  font-size: 18pt;
 }
 
 /*FIM - Caixa de noticias*/
@@ -320,19 +228,41 @@ main {
 /*Caixa de eventos*/
 
 #eventos {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-.evento {
-    width: 20%;
-    height: 60%;
-    border-radius: 30px;
-    background-color: purple;
-    display: flex;
-    flex-direction: column;
-    margin-right: 40px;
-    justify-content: end;
+#evento1 {
+  width: 20%;
+  height: 60%;
+  border-radius: 30px;
+  background-image: url(./img/e1.jpg);
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  justify-content: end;
+}
+
+#evento2 {
+  width: 20%;
+  height: 60%;
+  border-radius: 30px;
+  background-image: url(./img/e2.jpg);
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  justify-content: end;
+}
+
+#evento3 {
+  width: 20%;
+  height: 60%;
+  border-radius: 30px;
+  background-image: url(./img/e3.jpg);
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  justify-content: end;
 }
 
 /*FIM - Caixa de eventos*/
@@ -340,67 +270,63 @@ main {
 /*Área Lateral*/
 
 #area_lateral {
-    width: 15%;
-    height: 100%;
-    background-color: #262626;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    font-family: 'PT Serif', serif;
-    font-size: 18pt;
+  width: 15%;
+  height: 100%;
+  background-color: #262626;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: "PT Serif", serif;
+  font-size: 18pt;
 }
 
 #lista {
-    margin-top: 10px;
-    background-color: #D9D9D9;
-    width: 85%;
-    height: 50%;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 10pt;
-    color: black;
-
+  margin-top: 10px;
+  background-color: #d9d9d9;
+  width: 85%;
+  height: 50%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 10pt;
+  color: black;
 }
 
 #vejamais {
-    padding: 10px;
-    opacity: 40%;
+  padding: 10px;
+  opacity: 40%;
 }
 
 .lista_evento {
-    width: 100%;
-    color: black;
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 10pt;
-
+  width: 100%;
+  color: black;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 10pt;
 }
 
 hr {
-    width: 80%;
-    height: 1px;
-    background-color: black;
-    border: 0;
+  width: 80%;
+  height: 1px;
+  background-color: black;
+  border: 0;
 }
 
 #calendar {
-    width: 95%;
-    height: 50%;
-
+  width: 95%;
+  height: 50%;
 }
 
 #calendar img {
-    width: 100%;
-    height: 100%;
-
+  width: 100%;
+  height: 100%;
 }
 
 /*FIM - Área Lateral*/
@@ -408,33 +334,33 @@ hr {
 /*Rodapé*/
 
 footer {
-    width: 100%;
-    height: 10vh;
-    background-color: #D9D9D9;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 10vh;
+  background-color: #d9d9d9;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer img {
-    width: 200px;
+  width: 200px;
 }
 
 .details {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 
 .details h3 {
-    font-family: 'PT Serif', serif;
-    font-size: medium;
+  font-family: "PT Serif", serif;
+  font-size: medium;
 }
 
 .details p {
-    font-family: 'Poppins', sans-serif;
-    font-size: small;
+  font-family: "Poppins", sans-serif;
+  font-size: small;
 }
 
 /*FIM - Rodapé*/
