@@ -1,85 +1,91 @@
 /*Fontes importadas*/
 
-/*Poppins*/ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*font-family: 'Poppins', sans-serif;*/
 
-/*PT Serif*/ @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/*PT Serif*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /*font-family: 'PT Serif', serif;*/
 
+/*Universal*/
+html {
+    scroll-behavior: smooth;
+}
 
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0%;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
 
+h3, h6, p{
+    margin: 0%;
+}
+/*FIM - Universal*/
 /*Cabeçalho*/
-
 header {
-    width: 90%;
+    width: 100%;
     height: 13vh;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
-
 }
 
-
-
-#cabecalho{    
+#cabecalho {
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
-
-
     position: relative;
     display: flex;
-    flex-direction:row-reverse;
+    flex-direction: row-reverse;
 }
 
-.logo{
+.logo {    
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
     display: flex;
-    
-    width: 250px ;
-    position: absolute;
-    left:80vh;
+
+    width: 250px;
+    left: 80vh;
 
 }
 
-#foto{
+#foto {
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
     display: flex;
     width: 70px;
     height: 70px;
     border-radius: 50%;
 }
 
-#ON-OFF{
+#ON-OFF {
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
     display: flex;
     width: 40px;
     height: 40px;
 }
 
-.icon{
+.icon {   
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
     display: flex;
     width: 30px;
     height: 30px;
 }
 
-#menu{
+#menu {
+
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
     display: flex;
     position: absolute;
     width: 30px;
@@ -87,51 +93,50 @@ header {
     right: 10px;
 }
 
-#box{
+#box {
+    
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
     display: flex;
     width: 30%;
     height: 100%;
 
 }
 
-#botao{
+#botao {
+       
     width: 100%;
     justify-content: center;
-    margin-bottom: 10px;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
 }
 
-#box3{
-    margin-bottom: 10px;
+#box3 {   
     width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
+h4{
+    margin: 0%;
+}
 /*FIM - Cabeçalho*/
-
 
 /*Barra de Navegação*/
 
-#box2{
+#box2 {
     width: 100%;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
     display: flex;
-    background-color:white;
+    background-color: white;
 }
 
 #barra_navegacao {
-    margin-bottom: 10px;
-    width: 95%;
+    width: 90%;
     height: 6vh;
     background-color: #D9D9D9;
     border-radius: 10px;
@@ -141,8 +146,8 @@ header {
     position: relative;
 }
 
-ul{
-    margin-bottom: 10px;
+ul {
+    margin: 0%;
     width: 93%;
     height: 100%;
     display: flex;
@@ -152,8 +157,7 @@ ul{
 
 }
 
-li{
-    margin-bottom: 10px;
+li {
     width: 100%;
     height: 100%;
     list-style-type: none;
@@ -166,85 +170,185 @@ li{
     font-family: 'Poppins', sans-serif;
 }
 
-.guia{
+.guia {
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
     display: flex;
     border-right: 1px solid black;
-    padding-left: 14px ;
+    padding-left: 14px;
 }
 
-.guia:nth-last-child(1){
+.guia:nth-last-child(1) {
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
     display: flex;
     border-right: 0px solid black;
 }
 
-.guia:nth-child(1){
+.guia:nth-child(1) {
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
     display: flex;
     padding: 0px;
 }
 
+.menu-vertical{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    display: none;
+}
+
 /*FIM - Barra de Navegação*/
 
-/*Rodapé*/
+/*Barra de Navegação Mobile*/
 
+@media (max-width:800px) {
+    .menu {
+        height: 12vmax;
+    }
+}
+
+@media (min-width:100px) and (max-width:1000px) {
+
+    .conteudo {
+        width: 95%;
+    }
+
+    .menu2 {
+        width: fit-content;
+    }
+
+    #foto {
+        width: 80%;
+        display: inline;
+    }
+
+    .menu {
+        height: 110px;
+    }
+
+    #box2 {
+        display: none;
+    }
+
+    .menu-vertical {
+        display: block;
+        width: 100%;
+        margin: auto;
+        position: fixed;
+        color: black;
+        border-radius: 10px;
+        height: 90px;
+    }
+
+    .topnav {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        display: flex;
+        position: absolute;
+        overflow: hidden;
+        background-color: #D9D9D9;
+        position: relative;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .topnav a.icon {
+        background: #D9D9D9;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav a:hover {
+        height: 90px;
+        background-color: #D9D9D9;
+        color: aliceblue;
+    }
+
+    .active {
+        color: #202022;
+    }
+
+    .imga {
+        width: 80%;
+    }
+
+    .imgv {
+        width: 40px;
+    }
+
+    .logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    footer {
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+/*FIM - Barra de Navegação Mobile*/
+
+/*Rodapé*/
 footer {
-    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 10vh;
-    background-color:#D9D9D9;
+    background-color: #D9D9D9;
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-footer img{
+footer img {
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
     display: flex;
     width: 200px;
 }
 
-.details{
-    width: 100%;
+.details {
+    height: 10vh;
+    width: 50%;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-    padding: 10px;
 }
 
-.details h3{
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    display: flex;
+.details h3 {
+    margin: 0%;
     font-family: 'PT Serif', serif;
     font-size: medium;
 }
 
-.details p{
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    display: flex;
+.details p {
+    margin: 0%;
     font-family: 'Poppins', sans-serif;
     font-size: small;
 }
-
 /*FIM - Rodapé*/
