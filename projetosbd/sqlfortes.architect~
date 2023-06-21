@@ -74,13 +74,13 @@
     </index>
    </folder>
   </table>
-  <table id="TAB19" populated="true" UUID="e7a1b591-ca41-478d-ae62-fc6d009d918f" name="hobbies" objectType="TABLE" physicalName="hobbies" >
-   <remarks>tabela que lista todos os hobbies</remarks>
+  <table id="TAB19" populated="true" UUID="e7a1b591-ca41-478d-ae62-fc6d009d918f" name="soft_skills" objectType="TABLE" physicalName="soft_skills" >
+   <remarks>tabela que lista todas as soft skills</remarks>
    <folder id="FOLTAB191" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL20" populated="true" UUID="70ceeeed-6a50-473d-a2a4-8bcb50ac1ade" autoIncrement="false" autoIncrementSequenceName="hobbies_hobby_id_seq" defaultValue="" name="hobby_id" nullable="0" physicalName="hobby_id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
-     <remarks>identificador unico do hobby</remarks>
+    <column id="COL20" populated="true" UUID="70ceeeed-6a50-473d-a2a4-8bcb50ac1ade" autoIncrement="false" autoIncrementSequenceName="soft_skills_sskill_id_seq" defaultValue="" name="sskill_id" nullable="0" physicalName="sskill_id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>identificador unico da soft skill</remarks>
     </column>
-    <column id="COL21" populated="true" UUID="29f370e0-c5cb-4b5d-9ce3-5db803d8b751" autoIncrement="false" autoIncrementSequenceName="hobbies_nome_seq" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL21" populated="true" UUID="29f370e0-c5cb-4b5d-9ce3-5db803d8b751" autoIncrement="false" autoIncrementSequenceName="soft_skills_nome_seq" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks>nome da skill</remarks>
     </column>
     </folder>
@@ -89,19 +89,19 @@
     <folder id="FOLTAB192" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB194" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX22" populated="true" UUID="2b6eb771-e5a9-4b2a-9441-aaf013c49c0b" clustered="false" name="hobbies_pk" physicalName="soft_skills_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC23" populated="true" UUID="db474ba9-146d-47bd-ba2d-0927ed899c2d" ascendingOrDescending="UNSPECIFIED" column-ref="COL20" name="hobby_id" physicalName="hobby_id" />
+    <index id="IDX22" populated="true" UUID="2b6eb771-e5a9-4b2a-9441-aaf013c49c0b" clustered="false" name="soft_skills_pk" physicalName="soft_skills_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC23" populated="true" UUID="db474ba9-146d-47bd-ba2d-0927ed899c2d" ascendingOrDescending="UNSPECIFIED" column-ref="COL20" name="sskill_id" physicalName="sskill_id" />
     </index>
    </folder>
   </table>
-  <table id="TAB24" populated="true" UUID="b40febfe-cc5a-4eac-8d80-6283d802608a" name="hobbies_user" objectType="TABLE" physicalName="hobbies_user" >
-   <remarks>tabela intermediária que listará os hobbies de um usuário</remarks>
+  <table id="TAB24" populated="true" UUID="b40febfe-cc5a-4eac-8d80-6283d802608a" name="sskill_user" objectType="TABLE" physicalName="sskill_user" >
+   <remarks>tabela intermediária que listará as soft skills dos usuários</remarks>
    <folder id="FOLTAB241" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL25" populated="true" UUID="6c96e4f9-fd77-4038-a10d-5d9d9cb50d90" autoIncrement="false" autoIncrementSequenceName="hobbies_user_user_id_seq" defaultValue="" name="user_id" nullable="0" physicalName="user_id" precision="0" primaryKeySeq="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL25" populated="true" UUID="6c96e4f9-fd77-4038-a10d-5d9d9cb50d90" autoIncrement="false" autoIncrementSequenceName="sskill_user_user_id_seq" defaultValue="" name="user_id" nullable="0" physicalName="user_id" precision="0" primaryKeySeq="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks>identificador unico do funcionario</remarks>
     </column>
-    <column id="COL26" populated="true" UUID="803a9e43-5851-413f-a3e1-c406620376e8" autoIncrement="false" autoIncrementSequenceName="hobbies_user_hobby_id_seq" defaultValue="" name="hobby_id" nullable="0" physicalName="hobby_id" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
-     <remarks>identificador unico do hobby</remarks>
+    <column id="COL26" populated="true" UUID="803a9e43-5851-413f-a3e1-c406620376e8" autoIncrement="false" autoIncrementSequenceName="sskill_user_sskill_id_seq" defaultValue="" name="sskill_id" nullable="0" physicalName="sskill_id" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>identificador unico da soft skill</remarks>
     </column>
     </folder>
     <folder id="FOLTAB243" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
@@ -109,19 +109,19 @@
     <folder id="FOLTAB242" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB244" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX27" populated="true" UUID="f1f14a73-3475-484e-a169-b4cbe7c31ccb" clustered="false" name="hobbies_user_pk" physicalName="sskill_user_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX27" populated="true" UUID="f1f14a73-3475-484e-a169-b4cbe7c31ccb" clustered="false" name="sskill_user_pk" physicalName="sskill_user_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC28" populated="true" UUID="6bbeae56-eeef-41b7-a57a-68c82a900e08" ascendingOrDescending="UNSPECIFIED" column-ref="COL25" name="user_id" physicalName="user_id" />
-     <index-column id="IDC29" populated="true" UUID="4bbd041b-76c5-4efe-8cf4-4ffc1851e4a2" ascendingOrDescending="UNSPECIFIED" column-ref="COL26" name="hobby_id" physicalName="hobby_id" />
+     <index-column id="IDC29" populated="true" UUID="4bbd041b-76c5-4efe-8cf4-4ffc1851e4a2" ascendingOrDescending="UNSPECIFIED" column-ref="COL26" name="sskill_id" physicalName="sskill_id" />
     </index>
    </folder>
   </table>
-  <table id="TAB30" populated="true" UUID="82fba369-6900-4587-b5e1-1424fa41be29" name="interesses" objectType="TABLE" physicalName="interesses" >
-   <remarks>tabela que lista todos os interesses</remarks>
+  <table id="TAB30" populated="true" UUID="82fba369-6900-4587-b5e1-1424fa41be29" name="hard_skills" objectType="TABLE" physicalName="hard_skills" >
+   <remarks>tabela que lista todas as hard skills</remarks>
    <folder id="FOLTAB301" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL31" populated="true" UUID="4795eba4-bc1b-4df6-8cb1-31b820589320" autoIncrement="false" autoIncrementSequenceName="interesses_interesse_id_seq" defaultValue="" name="interesse_id" nullable="0" physicalName="interesse_id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
-     <remarks>identificador unico do interesse</remarks>
+    <column id="COL31" populated="true" UUID="4795eba4-bc1b-4df6-8cb1-31b820589320" autoIncrement="false" autoIncrementSequenceName="hard_skills_hskill_id_seq" defaultValue="" name="hskill_id" nullable="0" physicalName="hskill_id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>identificador unico da soft skill</remarks>
     </column>
-    <column id="COL32" populated="true" UUID="2d23bb1c-c37e-4823-94b2-5b005d0b5046" autoIncrement="false" autoIncrementSequenceName="interesses_nome_seq" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL32" populated="true" UUID="2d23bb1c-c37e-4823-94b2-5b005d0b5046" autoIncrement="false" autoIncrementSequenceName="hard_skills_nome_seq" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks>nome da skill</remarks>
     </column>
     </folder>
@@ -130,19 +130,19 @@
     <folder id="FOLTAB302" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB304" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX33" populated="true" UUID="fef5a77e-6809-48d8-bee3-072f2e51f5e7" clustered="false" name="interesses_pk" physicalName="hard_skills_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC34" populated="true" UUID="4d038b8a-fe76-4873-a293-79f7fec97d05" ascendingOrDescending="UNSPECIFIED" column-ref="COL31" name="interesse_id" physicalName="interesse_id" />
+    <index id="IDX33" populated="true" UUID="fef5a77e-6809-48d8-bee3-072f2e51f5e7" clustered="false" name="hard_skills_pk" physicalName="hard_skills_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC34" populated="true" UUID="4d038b8a-fe76-4873-a293-79f7fec97d05" ascendingOrDescending="UNSPECIFIED" column-ref="COL31" name="hskill_id" physicalName="hskill_id" />
     </index>
    </folder>
   </table>
-  <table id="TAB35" populated="true" UUID="97fe62fe-9dbb-47d1-a4f8-2bc83cc323fc" name="skills_user" objectType="TABLE" physicalName="skills_user" >
-   <remarks>tabela intermediária que listará todas as skills dos usuarios</remarks>
+  <table id="TAB35" populated="true" UUID="97fe62fe-9dbb-47d1-a4f8-2bc83cc323fc" name="talento_user" objectType="TABLE" physicalName="talento_user" >
+   <remarks>tabela intermediária que listará os talentos dos usuarios</remarks>
    <folder id="FOLTAB351" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL36" populated="true" UUID="7f08fc42-ccd0-414e-b6bf-8e5ae4e536ce" autoIncrement="false" autoIncrementSequenceName="skills_user_user_id_seq" defaultValue="" name="user_id" nullable="0" physicalName="user_id" precision="0" primaryKeySeq="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL36" populated="true" UUID="7f08fc42-ccd0-414e-b6bf-8e5ae4e536ce" autoIncrement="false" autoIncrementSequenceName="talento_user_user_id_seq" defaultValue="" name="user_id" nullable="0" physicalName="user_id" precision="0" primaryKeySeq="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks>identificador unico do funcionario</remarks>
     </column>
-    <column id="COL37" populated="true" UUID="45e32e54-69a3-42ac-9c30-a33e6f4512df" autoIncrement="false" autoIncrementSequenceName="skills_user_skill_id_seq" defaultValue="" name="skill_id" nullable="0" physicalName="skill_id" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
-     <remarks>identificador unico da skill</remarks>
+    <column id="COL37" populated="true" UUID="45e32e54-69a3-42ac-9c30-a33e6f4512df" autoIncrement="false" autoIncrementSequenceName="talento_user_talento_id_seq" defaultValue="" name="talento_id" nullable="0" physicalName="talento_id" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>identificador unico do talento</remarks>
     </column>
     </folder>
     <folder id="FOLTAB353" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
@@ -150,23 +150,20 @@
     <folder id="FOLTAB352" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB354" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX38" populated="true" UUID="9f1079e4-a644-4984-bae4-9e51ce6b2f8b" clustered="false" name="skills_user_pk" physicalName="talento_user_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX38" populated="true" UUID="9f1079e4-a644-4984-bae4-9e51ce6b2f8b" clustered="false" name="talento_user_pk" physicalName="talento_user_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC39" populated="true" UUID="2c65efae-6263-45b0-b1c9-8d9fb96c45e7" ascendingOrDescending="UNSPECIFIED" column-ref="COL36" name="user_id" physicalName="user_id" />
-     <index-column id="IDC40" populated="true" UUID="5cb352b5-6cbd-45a0-9d56-4c71672aba66" ascendingOrDescending="UNSPECIFIED" column-ref="COL37" name="skill_id" physicalName="skill_id" />
+     <index-column id="IDC40" populated="true" UUID="5cb352b5-6cbd-45a0-9d56-4c71672aba66" ascendingOrDescending="UNSPECIFIED" column-ref="COL37" name="talento_id" physicalName="talento_id" />
     </index>
    </folder>
   </table>
-  <table id="TAB41" populated="true" UUID="db229321-fc10-4ea2-834b-182d83e36e47" name="skills" objectType="TABLE" physicalName="skills" >
-   <remarks>tabela que lista todas as skills</remarks>
+  <table id="TAB41" populated="true" UUID="db229321-fc10-4ea2-834b-182d83e36e47" name="talentos" objectType="TABLE" physicalName="talentos" >
+   <remarks>tabela que lista todas os talentos</remarks>
    <folder id="FOLTAB411" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL42" populated="true" UUID="28bfd2db-88da-4760-9c43-17637db7be4d" autoIncrement="false" autoIncrementSequenceName="skills_skill_id_seq" defaultValue="" name="skill_id" nullable="0" physicalName="skill_id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
-     <remarks>identificador unico da skill</remarks>
+    <column id="COL42" populated="true" UUID="28bfd2db-88da-4760-9c43-17637db7be4d" autoIncrement="false" autoIncrementSequenceName="talentos_talento_id_seq" defaultValue="" name="talento_id" nullable="0" physicalName="talento_id" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>identificador unico do talento</remarks>
     </column>
-    <column id="COL43" populated="true" UUID="5cd7274d-0625-4904-a902-a48d48b77d6b" autoIncrement="false" autoIncrementSequenceName="skills_nome_seq" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
-     <remarks>nome da skill</remarks>
-    </column>
-    <column id="COL44" populated="true" UUID="895431a1-85c6-4962-9fcd-98fd9583c075" autoIncrement="false" autoIncrementSequenceName="skills_tipo_seq" defaultValue="" name="tipo" nullable="0" physicalName="tipo" precision="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
-     <remarks>tipo da skill, se é hard skill ou soft skill</remarks>
+    <column id="COL43" populated="true" UUID="5cd7274d-0625-4904-a902-a48d48b77d6b" autoIncrement="false" autoIncrementSequenceName="talentos_nome_seq" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>nome do talento</remarks>
     </column>
     </folder>
     <folder id="FOLTAB413" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
@@ -174,53 +171,53 @@
     <folder id="FOLTAB412" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB414" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX45" populated="true" UUID="44fd0a7f-20db-4ff1-8d3e-79d82a1ad415" clustered="false" name="skills_pk" physicalName="talentos_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC46" populated="true" UUID="497d6a48-d7f8-4cb3-9139-cf5d99ebf174" ascendingOrDescending="UNSPECIFIED" column-ref="COL42" name="skill_id" physicalName="skill_id" />
+    <index id="IDX44" populated="true" UUID="44fd0a7f-20db-4ff1-8d3e-79d82a1ad415" clustered="false" name="talentos_pk" physicalName="talentos_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC45" populated="true" UUID="497d6a48-d7f8-4cb3-9139-cf5d99ebf174" ascendingOrDescending="UNSPECIFIED" column-ref="COL42" name="talento_id" physicalName="talento_id" />
     </index>
    </folder>
   </table>
-  <table id="TAB47" populated="true" UUID="a9a4c2d2-fb04-4e45-a78d-7f7eca40ca1d" name="interesses_usuario" objectType="TABLE" physicalName="interesses_usuario" >
-   <remarks>tabela intermediária que listará os interesses de um usuário</remarks>
-   <folder id="FOLTAB471" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL48" populated="true" UUID="0ba9af80-6a16-42f7-957d-74b3aa3a4fbc" autoIncrement="false" autoIncrementSequenceName="interesses_usuario_user_id_seq" defaultValue="" name="user_id" nullable="0" physicalName="user_id" precision="0" primaryKeySeq="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+  <table id="TAB46" populated="true" UUID="a9a4c2d2-fb04-4e45-a78d-7f7eca40ca1d" name="hskill_user" objectType="TABLE" physicalName="hskill_user" >
+   <remarks>tabela intermediária que listará as hard skills dos usuários</remarks>
+   <folder id="FOLTAB461" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL47" populated="true" UUID="0ba9af80-6a16-42f7-957d-74b3aa3a4fbc" autoIncrement="false" autoIncrementSequenceName="hskill_user_user_id_seq" defaultValue="" name="user_id" nullable="0" physicalName="user_id" precision="0" primaryKeySeq="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks>identificador unico do funcionario</remarks>
     </column>
-    <column id="COL49" populated="true" UUID="f7f0247d-07ef-46a8-9873-e2ca776c71f6" autoIncrement="false" autoIncrementSequenceName="interesses_usuario_interesse_id_seq" defaultValue="" name="interesse_id" nullable="0" physicalName="interesse_id" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
-     <remarks>identificador unico do interesse</remarks>
+    <column id="COL48" populated="true" UUID="f7f0247d-07ef-46a8-9873-e2ca776c71f6" autoIncrement="false" autoIncrementSequenceName="hskill_user_hskill_id_seq" defaultValue="" name="hskill_id" nullable="0" physicalName="hskill_id" precision="0" primaryKeySeq="1" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks>identificador unico da hard skill</remarks>
     </column>
     </folder>
-    <folder id="FOLTAB473" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    <folder id="FOLTAB463" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
     </folder>
-    <folder id="FOLTAB472" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    <folder id="FOLTAB462" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
-    <folder id="FOLTAB474" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX50" populated="true" UUID="bfcbd290-7e5f-43ee-b6ee-9a61937d4ffb" clustered="false" name="interesses_usuario_pk" physicalName="hskill_user_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC51" populated="true" UUID="7cb1417e-0ceb-4233-9440-39d70a7d0fc1" ascendingOrDescending="UNSPECIFIED" column-ref="COL48" name="user_id" physicalName="user_id" />
-     <index-column id="IDC52" populated="true" UUID="91bcc2d2-1705-4a35-8e85-6a4eedcf7923" ascendingOrDescending="UNSPECIFIED" column-ref="COL49" name="interesse_id" physicalName="interesse_id" />
+    <folder id="FOLTAB464" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX49" populated="true" UUID="bfcbd290-7e5f-43ee-b6ee-9a61937d4ffb" clustered="false" name="hskill_user_pk" physicalName="hskill_user_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC50" populated="true" UUID="7cb1417e-0ceb-4233-9440-39d70a7d0fc1" ascendingOrDescending="UNSPECIFIED" column-ref="COL47" name="user_id" physicalName="user_id" />
+     <index-column id="IDC51" populated="true" UUID="91bcc2d2-1705-4a35-8e85-6a4eedcf7923" ascendingOrDescending="UNSPECIFIED" column-ref="COL48" name="hskill_id" physicalName="hskill_id" />
     </index>
    </folder>
   </table>
   <relationships>
-   <relationship id="REL53" populated="true" UUID="39d09c53-6319-454d-8b74-65c98c7e238d" deferrability="7" deleteRule="3" fk-table-ref="TAB35" fkCardinality="7" identifying="true" name="usuario_talento_user_fk" physicalName="usuario_talento_user_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP54" populated="true" UUID="7555c800-e8af-4831-8312-ac2bde93c300" fk-column-ref="COL36" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   <relationship id="REL52" populated="true" UUID="39d09c53-6319-454d-8b74-65c98c7e238d" deferrability="7" deleteRule="3" fk-table-ref="TAB35" fkCardinality="7" identifying="true" name="usuario_talento_user_fk" physicalName="usuario_talento_user_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP53" populated="true" UUID="7555c800-e8af-4831-8312-ac2bde93c300" fk-column-ref="COL36" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
    </relationship>
-   <relationship id="REL55" populated="true" UUID="1de2a41a-c5ba-44ac-8bfd-45550abb29d4" deferrability="7" deleteRule="3" fk-table-ref="TAB24" fkCardinality="7" identifying="true" name="usuario_sskill_user_fk" physicalName="usuario_sskill_user_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP56" populated="true" UUID="912e6350-a3ff-4d8b-a4c5-c162f80491ca" fk-column-ref="COL25" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   <relationship id="REL54" populated="true" UUID="1de2a41a-c5ba-44ac-8bfd-45550abb29d4" deferrability="7" deleteRule="3" fk-table-ref="TAB24" fkCardinality="7" identifying="true" name="usuario_sskill_user_fk" physicalName="usuario_sskill_user_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP55" populated="true" UUID="912e6350-a3ff-4d8b-a4c5-c162f80491ca" fk-column-ref="COL25" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
    </relationship>
-   <relationship id="REL57" populated="true" UUID="7b71cd63-94f0-48bd-aeda-fdd3f8967f54" deferrability="7" deleteRule="3" fk-table-ref="TAB47" fkCardinality="7" identifying="true" name="usuario_hskill_user_fk" physicalName="usuario_hskill_user_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP58" populated="true" UUID="834b0398-0b7e-4215-9146-0c2e683ca9d1" fk-column-ref="COL48" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+   <relationship id="REL56" populated="true" UUID="7b71cd63-94f0-48bd-aeda-fdd3f8967f54" deferrability="7" deleteRule="3" fk-table-ref="TAB46" fkCardinality="7" identifying="true" name="usuario_hskill_user_fk" physicalName="usuario_hskill_user_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP57" populated="true" UUID="834b0398-0b7e-4215-9146-0c2e683ca9d1" fk-column-ref="COL47" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
    </relationship>
-   <relationship id="REL59" populated="true" UUID="a79f7650-47c0-425a-8834-0c95d93ce0fe" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="false" name="enderecos_usuario_fk" physicalName="enderecos_usuario_fk" pk-table-ref="TAB13" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP60" populated="true" UUID="25181eaa-4972-4654-8a61-49eea686466b" fk-column-ref="COL7" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL14" />
+   <relationship id="REL58" populated="true" UUID="a79f7650-47c0-425a-8834-0c95d93ce0fe" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="false" name="enderecos_usuario_fk" physicalName="enderecos_usuario_fk" pk-table-ref="TAB13" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP59" populated="true" UUID="25181eaa-4972-4654-8a61-49eea686466b" fk-column-ref="COL7" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL14" />
    </relationship>
-   <relationship id="REL61" populated="true" UUID="53fb8c6c-46e9-4a76-ba8e-a895da4e30d5" deferrability="7" deleteRule="3" fk-table-ref="TAB24" fkCardinality="7" identifying="true" name="soft_skills_sskill_user_fk" physicalName="soft_skills_sskill_user_fk" pk-table-ref="TAB19" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP62" populated="true" UUID="26e818f1-8363-4857-9c64-ff4abfa5a69b" fk-column-ref="COL26" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL20" />
+   <relationship id="REL60" populated="true" UUID="53fb8c6c-46e9-4a76-ba8e-a895da4e30d5" deferrability="7" deleteRule="3" fk-table-ref="TAB24" fkCardinality="7" identifying="true" name="soft_skills_sskill_user_fk" physicalName="soft_skills_sskill_user_fk" pk-table-ref="TAB19" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP61" populated="true" UUID="26e818f1-8363-4857-9c64-ff4abfa5a69b" fk-column-ref="COL26" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL20" />
    </relationship>
-   <relationship id="REL63" populated="true" UUID="07f6b169-5167-4314-a163-1e394808e60e" deferrability="7" deleteRule="3" fk-table-ref="TAB47" fkCardinality="7" identifying="true" name="hard_skills_hskill_user_fk" physicalName="hard_skills_hskill_user_fk" pk-table-ref="TAB30" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP64" populated="true" UUID="ef994fe1-3256-4fff-8a33-bbd5f597f09e" fk-column-ref="COL49" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL31" />
+   <relationship id="REL62" populated="true" UUID="07f6b169-5167-4314-a163-1e394808e60e" deferrability="7" deleteRule="3" fk-table-ref="TAB46" fkCardinality="7" identifying="true" name="hard_skills_hskill_user_fk" physicalName="hard_skills_hskill_user_fk" pk-table-ref="TAB30" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP63" populated="true" UUID="ef994fe1-3256-4fff-8a33-bbd5f597f09e" fk-column-ref="COL48" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL31" />
    </relationship>
-   <relationship id="REL65" populated="true" UUID="96fac46c-d5d6-4ef9-8d96-d7f4c8caea95" deferrability="7" deleteRule="3" fk-table-ref="TAB35" fkCardinality="7" identifying="true" name="talentos_talento_user_fk" physicalName="talentos_talento_user_fk" pk-table-ref="TAB41" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP66" populated="true" UUID="8b01e082-35bf-48c0-bb5b-5c4368b0e4c9" fk-column-ref="COL37" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL42" />
+   <relationship id="REL64" populated="true" UUID="96fac46c-d5d6-4ef9-8d96-d7f4c8caea95" deferrability="7" deleteRule="3" fk-table-ref="TAB35" fkCardinality="7" identifying="true" name="talentos_talento_user_fk" physicalName="talentos_talento_user_fk" pk-table-ref="TAB41" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP65" populated="true" UUID="8b01e082-35bf-48c0-bb5b-5c4368b0e4c9" fk-column-ref="COL37" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL42" />
    </relationship>
   </relationships>
  </target-database>
@@ -234,15 +231,15 @@
   <table-pane table-ref="TAB24" x="336" y="360" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB30" x="1342" y="545" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB35" x="691" y="643" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB41" x="1018" y="639" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB47" x="1139" y="426" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-link relationship-ref="REL53" pkConnection="0.5" fkConnection="0.4973821989528796" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
-  <table-link relationship-ref="REL55" pkConnection="0.4967741935483871" fkConnection="0.47368421052631576" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
-  <table-link relationship-ref="REL59" pkConnection="0.4900990099009901" fkConnection="0.5099009900990099" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
-  <table-link relationship-ref="REL65" pkConnection="0.47435897435897434" fkConnection="0.5128205128205128" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
-  <table-link relationship-ref="REL61" pkConnection="0.20224719101123595" fkConnection="0.1956521739130435" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
-  <table-link relationship-ref="REL63" pkConnection="0.21787709497206703" fkConnection="0.7675675675675676" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
-  <table-link relationship-ref="REL57" pkConnection="0.5161290322580645" fkConnection="0.43859649122807015" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-pane table-ref="TAB41" x="1103" y="685" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB46" x="1139" y="426" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL52" pkConnection="0.5" fkConnection="0.4973821989528796" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL54" pkConnection="0.4967741935483871" fkConnection="0.47368421052631576" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL58" pkConnection="0.4900990099009901" fkConnection="0.5099009900990099" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL64" pkConnection="0.47435897435897434" fkConnection="0.5128205128205128" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL60" pkConnection="0.20224719101123595" fkConnection="0.1956521739130435" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL62" pkConnection="0.21787709497206703" fkConnection="0.7675675675675676" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL56" pkConnection="0.5161290322580645" fkConnection="0.43859649122807015" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
  </play-pen>
  <critic-manager>
   <critic-grouping platformType="Generic" enabled="true">
