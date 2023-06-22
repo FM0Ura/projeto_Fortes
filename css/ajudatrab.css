@@ -69,6 +69,7 @@ form {
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #d9d9d9;
+  font-family: "Poppins", sans-serif;
 }
 
 #forms input[type="text"]::placeholder,
@@ -95,6 +96,8 @@ button[type="submit"] {
   border-radius: 20px;
   align-items: center;
   justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 13pt;
 }
 
 button[type="submit"]:hover {
@@ -315,3 +318,133 @@ li {
   display: flex;
   padding: 0px;
 }
+
+.menu-vertical {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.link .icon {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*FIM - Barra de Navegação*/
+
+/*Barra de Navegação Mobile*/
+
+@media (max-width: 800px) {
+  .menu {
+    height: 12vmax;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 1000px) {
+  .conteudo {
+    width: 95%;
+  }
+
+  .menu2 {
+    width: fit-content;
+  }
+
+  #foto {
+    width: 80%;
+    display: inline;
+  }
+
+  .menu {
+    height: 110px;
+  }
+
+  #box2 {
+    display: none;
+  }
+
+  .menu-vertical {
+    display: block;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    color: black;
+    border-radius: 10px;
+    height: 90px;
+  }
+
+  .topnav {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    background-color: #d9d9d9;
+    position: relative;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .topnav a.icon {
+    background: #d9d9d9;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    height: 90px;
+    background-color: #d9d9d9;
+    color: aliceblue;
+  }
+
+  .active {
+    color: #202022;
+  }
+
+  .imga {
+    width: 80%;
+  }
+
+  .imgv {
+    width: 40px;
+  }
+
+  .logo {
+    width: 100%;
+    height: 100%;
+  }
+
+  footer {
+    width: 100%;
+    height: fit-content;
+  }
+}
+
+/*FIM - Barra de Navegação Mobile*/

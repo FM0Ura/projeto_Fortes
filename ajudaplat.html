@@ -1,3 +1,6 @@
+<!-- Falta apenas adicionar link a página de "Comunidades" -->
+<!-- Falta adicionar footer -->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -5,9 +8,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina de Ajuda na Plataforma</title>
     <link rel="stylesheet" href="./css/ajudaplat.css" />
+    <link
+      rel="shortcut icon"
+      href="./icons/fortes-logo.png"
+      type="image/x-icon" />
   </head>
   <body>
     <header>
+      <!-- MENU VERTICAL -->
+
+      <div class="menu-vertical">
+        <div class="topnav">
+          <a href="#" class="active"
+            ><img
+              class="imga"
+              src="https://fortes.ind.br/wp-content/uploads/2022/08/FORTES_LOGOMARCA-300x91.png"
+          /></a>
+          <div id="myLinks">
+            <a href="#">HOME</a>
+            <a href="#">PÁGINA DE PERFIL</a>
+            <a href="#">COMUNIDADES</a>
+            <a href="#">BUSCAR TALENTOS</a>
+            <a href="#">AJUDA NO TRABALHO</a>
+            <a href="#">AJUDA NA PLATAFORMA</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="iconvert"
+              ><img class="imgv" src="./icons/linhas.png"
+            /></i>
+          </a>
+        </div>
+      </div>
+
       <div id="cabecalho">
         <img
           class="logo"
@@ -29,31 +61,43 @@
       <nav id="barra_navegacao">
         <ul>
           <div class="guia">
-            <img src="./icons/home-icon-silhouette.png" alt="" class="icon" />
-            <li>Página Inicial</li>
+            <a href="./index.html" class="link">
+              <img src="./icons/home-icon-silhouette.png" alt="" class="icon" />
+              <li>Página Inicial</li>
+            </a>
           </div>
           <div class="guia">
-            <img src="./icons/profile-user.png" alt="" class="icon" />
-            <li>Página de Perfil</li>
+            <a href="./pagperfil.html" class="link">
+              <img src="./icons/profile-user.png" alt="" class="icon" />
+              <li>Página de Perfil</li>
+            </a>
           </div>
           <div class="guia">
-            <img
-              src="./icons/multiple-users-silhouette.png"
-              alt=""
-              class="icon" />
-            <li>Comunidades</li>
+            <a href="" class="link">
+              <img
+                src="./icons/multiple-users-silhouette.png"
+                alt=""
+                class="icon" />
+              <li>Comunidades</li>
+            </a>
           </div>
           <div class="guia">
-            <img src="./icons/find.png" alt="" class="icon" />
-            <li>Busque talentos</li>
+            <a href="./filtrouser.html" class="link">
+              <img src="./icons/find.png" alt="" class="icon" />
+              <li>Busque talentos</li>
+            </a>
           </div>
           <div class="guia">
-            <img src="./icons/customer-service.png" alt="" class="icon" />
-            <li>Ajuda no trabalho</li>
+            <a href="./ajudatrab.html" class="link">
+              <img src="./icons/customer-service.png" alt="" class="icon" />
+              <li>Ajuda no trabalho</li>
+            </a>
           </div>
           <div class="guia">
-            <img src="./icons/information.png" alt="" class="icon" />
-            <li>Ajuda na plataforma</li>
+            <a href="./ajudaplat.html" class="link">
+              <img src="./icons/information.png" alt="" class="icon" />
+              <li>Ajuda na plataforma</li>
+            </a>
           </div>
         </ul>
         <img
