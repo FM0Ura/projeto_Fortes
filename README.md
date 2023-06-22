@@ -28,7 +28,7 @@ Com relação a **Desenvolvimento de Banco de Dados** foi proposto que criássem
 
 | Matrícula          | Nome do Aluno                   |
 | ------------------ | --------------                  |
-| 202300000          | Felipe Angelo Zucolotto Moura   |
+| 202305418         | Felipe Angelo Zucolotto Moura   |
 | 202305432          | Guilherme Vizzoni Haidmann      |
 | 202306212          | Pedro Maia Dantas Nunes         |
 | 202305764          | Arthur Romani Inacio de Souza   | 
