@@ -535,3 +535,26 @@ hr {
   flex-direction: column;
   justify-content: space-around;
 }
+
+#botao1 {
+  padding: 5px 10px;
+  background-color: #084F8C;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 185px;
+  height: 55px;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+#botao1:hover {
+  background-color: #0b5799;
+  transition: 0.5s ease-in-out;
+}
+
+.imgtexto {
+  width: 20px;
+  height: 20px;
+}
