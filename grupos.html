@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analistas de Dados Fortes - Grupo</title>
+    <link rel="stylesheet" href="./css/grupos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+        <link rel="shortcut icon" href="./icons/chat.png">
+</head>
+
+<body>
+    <header>
+        <!-- MENU VERTICAL -->
+
+        <div class="menu-vertical">
+            <div class="topnav">
+                <a href="#" class="active"><img class="imga"
+                        src="https://fortes.ind.br/wp-content/uploads/2022/08/FORTES_LOGOMARCA-300x91.png" /></a>
+                <div id="myLinks">
+                    <a href="#">HOME</a>
+                    <a href="#">PÁGINA DE PERFIL</a>
+                    <a href="#">COMUNIDADES</a>
+                    <a href="#">BUSCAR TALENTOS</a>
+                    <a href="#">AJUDA NO TRABALHO</a>
+                    <a href="#">AJUDA NA PLATAFORMA</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="iconvert"><img class="imgv" src="./icons/linhas.png" /></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="menu-lateral">
+
+            <div class="header">
+                <div class="userimg">
+                    <img src="./icons/1649793484914.jpeg" alt="" class="cover">
+                </div>
+                <ul class="icons">
+                    <li><img src="./icons/left-arrow.png" alt=""></li>
+                    <li><img src="./icons/chat.png" alt=""></li>
+                    <li><img src="./icons/switch1.png" alt=""></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <div>
+                    <input type="text" placeholder="Pesquisar ou começar uma nova conversa">
+                    <ion-icon name="search-outline"></ion-icon>
+                </div>
+            </div>
+
+            <div class="chatlist">
+
+                <div class="block active">
+
+                    <div class="imgbx">
+                        <img src="./icons/grupoanalista.png" alt="" class="cover">
+                    </div>
+
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Analistas de Dados Fortes</h4>
+                            <p class="time">17:12</p>
+                        </div>
+
+                        <div class="message">
+                            <p>Não amigo, não é isso</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="block unread">
+                    <div class="imgbx">
+                        <img src="./icons/gruposuporte.png" alt="" class="cover">
+                    </div>
+
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Suporte TI - Geral</h4>
+                            <p class="time">12:30</p>
+                        </div>
+
+                        <div class="message">
+                            <p>Alexandre: Boa Tarde</p>
+                            <b>3</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block unread">
+                    <div class="imgbx">
+                        <img src="./icons/grupofortes.png" alt="" class="cover">
+                    </div>
+
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Grupo de Eventos</h4>
+                            <p class="time">25/05/23</p>
+                        </div>
+
+                        <div class="message">
+                            <p>Super evento!</p>
+                            <b>5</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block unread">
+                    <div class="imgbx">
+                        <img src="./icons/grupoespecialistas.png" alt="" class="cover">
+                    </div>
+
+                    <div class="details">
+                        <div class="listhead">
+                            <h4>Especialistas em TI</h4>
+                            <p class="time">01:47</p>
+                        </div>
+
+                        <div class="message">
+                            <p>Roberto: Ótimo artigo!</p>
+                            <b>4</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="menu-lateral-direita">
+
+            <div class="header">
+
+                <div class="img-perfil">
+                    <div class="userimg">
+                        <img src="./icons/grupoanalista.png" alt="" class="cover">
+                    </div>
+                    <h4><b class="textogrupo">Analistas de Dados Fortes</b><br><span>Abrantes, Pedro, Guilherme, Felipe,
+                            Renan, João Pedro, Bruno...</span></h4>
+                </div>
+
+                <ul class="icons">
+                    <li><img src="./icons/lupa.png" alt=""></li>
+                    <li><img src="./icons/addgrupo.png" alt=""></li>
+                    <li><ion-icon name="ellipsis-vertical"></ion-icon></li>
+                </ul>
+
+            </div>
+
+            <div class="chat">
+
+                <div class="messages friend-message">
+                    <p><b class="guilherme">Guilherme</b><br>Abrantes, estou com um problema no meu SGBD, poderia me
+                        ajudar?<br><span>12:23</span></p>
+                </div>
+
+                <div class="messages you-message">
+                    <p id="mensagem">Claro! Qual o problema?<br><span>12:43</span></p>
+                </div>
+
+                <div class="messages friend-message">
+                    <p><b class="pedro">Pedro</b><br><img class="imgtexto" src="./icons/problemasgbd2.png"
+                            alt=""><br>Isso é por causa do SGBD? <a class="marcar"
+                            href="/">@Abrantes</a><br><span>16:40</span></p>
+                </div>
+
+                <div class="messages you-message">
+                    <p id="mensagem">Não amigo, não é isso<br><span>17:12</span></p>
+                </div>
+
+            </div>
+
+            <div class="chatbox-input">
+                <ion-icon name="happy-outline"></ion-icon>
+                <ion-icon name="attach-outline"></ion-icon>
+                <input type="text" placeholder="Mensagem">
+                <ion-icon name="mic-outline"></ion-icon>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./javascript/index.js"></script>
+</body>
+
+</html>
