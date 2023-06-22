@@ -8,6 +8,17 @@ Nesse repositório serão adicionados arquivos relacionados ao projeto integrado
 
 O propósito desse repositório é ter um histórico das fases de desenvolvimento das etapas do projeto.
 
+### Alunos
+
+| Matrícula | Nome do Aluno                 |
+| --------- | ----------------------------- |
+| 202305418 | Felipe Angelo Zucolotto Moura |
+| 202305432 | Guilherme Vizzoni Haidmann    |
+| 202306212 | Pedro Maia Dantas Nunes       |
+| 202305764 | Arthur Romani Inacio de Souza |
+
+## Proposta por Disciplina:
+
 ### Referente a _UX Design_:
 
 Com relação a **_UX Design_**, foi criado um protótipo utilizando a **plataforma Figma**, para que ao iniciarmos o projeto já tivéssemos um caminho para o qual seguir na na etapa de Construção do Software para Web.
@@ -24,16 +35,7 @@ Com relação a **Software Web**, foi proposta a implementação do protótipo f
 
 Com relação a **Desenvolvimento de Banco de Dados** foi proposto que criássemos o projeto conceitual da plataforma desenvolvida, utilizando o **aplicativo BrModelo**; o **projeto lógico** utilizando o **aplicativo SQL Power Architect** e a **criação do script para a implementação** do projeto em um banco de dados.
 
-### Alunos
-
-| Matrícula          | Nome do Aluno                   |
-| ------------------ | --------------                  |
-| 202305418         | Felipe Angelo Zucolotto Moura   |
-| 202305432          | Guilherme Vizzoni Haidmann      |
-| 202306212          | Pedro Maia Dantas Nunes         |
-| 202305764          | Arthur Romani Inacio de Souza   | 
-
-### Resumo
+## Resumo:
 
 | Disciplina         | Proposta       |
 | ------------------ | -------------- |
