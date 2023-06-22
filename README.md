@@ -24,6 +24,15 @@ Com relação a **Software Web**, foi proposta a implementação do protótipo f
 
 Com relação a **Desenvolvimento de Banco de Dados** foi proposto que criássemos o projeto conceitual da plataforma desenvolvida, utilizando o **aplicativo BrModelo**; o **projeto lógico** utilizando o **aplicativo SQL Power Architect** e a **criação do script para a implementação** do projeto em um banco de dados.
 
+### Alunos
+
+| Matrícula          | Nome do Aluno                   |
+| ------------------ | --------------                  |
+| 202300000          | Felipe Angelo Zucolotto Moura   |
+| 202305432          | Guilherme Vizzoni Haidmann      |
+| 202300000          | Pedro Maia Dantas Nunes         |
+| 202300000          | Arthur Romani Inacio de Souza   | 
+
 ### Resumo
 
 | Disciplina         | Proposta       |
