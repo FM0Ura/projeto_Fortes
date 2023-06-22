@@ -30,7 +30,7 @@ Com relação a **Desenvolvimento de Banco de Dados** foi proposto que criássem
 | ------------------ | --------------                  |
 | 202300000          | Felipe Angelo Zucolotto Moura   |
 | 202305432          | Guilherme Vizzoni Haidmann      |
-| 202300000          | Pedro Maia Dantas Nunes         |
+| 202306212          | Pedro Maia Dantas Nunes         |
 | 202300000          | Arthur Romani Inacio de Souza   | 
 
 ### Resumo
