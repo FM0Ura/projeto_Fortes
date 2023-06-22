@@ -1,24 +1,3 @@
-DROP DATABASE IF EXISTS uvv;
-DROP USER IF EXISTS pedro;
-
-
-CREATE USER pedro 
-WITH 
-CREATEDB 
-CREATEROLE 
-ENCRYPTED PASSWORD 'maia';
-
-CREATE DATABASE uvv 
-WITH 
-OWNER		pedro
-TEMPLATE	template0
-ENCODING        "UTF8"
-LC_COLLATE	'pt_BR.UTF-8'
-LC_CTYPE        'pt_BR.UTF-8'
-ALLOW_CONNECTIONS 	TRUE;
-
-
-\c 'dbname=uvv user=pedro password=maia';
 
 /*Criação das tabelas do esquema*/
 
