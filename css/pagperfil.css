@@ -1,3 +1,5 @@
+/* Padrão do CSS implementado! */
+
 /*Fontes importadas*/
 
 /*Poppins*/
@@ -43,6 +45,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Poppins", sans-serif;
 }
 
 body div {
@@ -158,7 +161,7 @@ ul {
 }
 
 .guia:nth-child(1) {
-  padding: 0px;
+  padding: 10px;
 }
 
 .link {
@@ -403,3 +406,46 @@ a {
 }
 
 /* FIM - BIO, Skills, Entretenimento */
+/*Rodapé*/
+
+#area_rodape {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 10vh;
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer img {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  display: flex;
+  width: 200px;
+}
+
+.details {
+  height: 10vh;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.details h3 {
+  margin: 0%;
+  font-family: "PT Serif", serif;
+  font-size: medium;
+}
+
+.details p {
+  margin: 0%;
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+}
+/*FIM - Rodapé*/

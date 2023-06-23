@@ -1,3 +1,6 @@
+<!-- Padrão HTML implementado nessa página! -->
+<!-- Não necessidade de implementação do footer -->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -16,28 +19,32 @@
       type="image/x-icon" />
   </head>
   <body>
-    <!-- MENU VERTICAL -->
-    <div class="menu-vertical">
-      <div class="topnav">
-        <a href="#" class="active"
-          ><img
-            class="imga"
-            src="https://fortes.ind.br/wp-content/uploads/2022/08/FORTES_LOGOMARCA-300x91.png"
-        /></a>
-        <div id="myLinks">
-          <a href="./index.html">HOME</a>
-          <a href="./pagperfil.html">PÁGINA DE PERFIL</a>
-          <a href="./comunidades.html">COMUNIDADES</a>
-          <a href="./pgbuscatalentos.html">BUSCAR TALENTOS</a>
-          <a href="./ajudatrab.html">AJUDA NO TRABALHO</a>
-          <a href="./ajudaplat.html">AJUDA NA PLATAFORMA</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="iconvert"><img class="imgv" src="./icons/linhas.png" /></i>
-        </a>
-      </div>
-    </div>
     <header>
+      <!-- MENU VERTICAL -->
+
+      <div class="menu-vertical">
+        <div class="topnav">
+          <a href="#" class="active"
+            ><img
+              class="imga"
+              src="https://fortes.ind.br/wp-content/uploads/2022/08/FORTES_LOGOMARCA-300x91.png"
+          /></a>
+          <div id="myLinks">
+            <a href="./index.html">HOME</a>
+            <a href="./pagperfil.html">PÁGINA DE PERFIL</a>
+            <a href="./comunidades.html">COMUNIDADES</a>
+            <a href="./filtrouser.html">BUSCAR TALENTOS</a>
+            <a href="./ajudatrab.html">AJUDA NO TRABALHO</a>
+            <a href="./ajudaplat.html">AJUDA NA PLATAFORMA</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="iconvert"
+              ><img class="imgv" src="./icons/linhas.png"
+            /></i>
+          </a>
+        </div>
+      </div>
+
       <div id="cabecalho">
         <img
           class="logo"
@@ -70,8 +77,11 @@
             </a>
           </div>
           <div class="guia">
-            <a href="./comunidades.html" class="link">
-              <img src="./icons/multiple-users-silhouette.png" alt="" class="icon" />
+            <a href="./grupos.html" class="link">
+              <img
+                src="./icons/multiple-users-silhouette.png"
+                alt=""
+                class="icon" />
               <li>Comunidades</li>
             </a>
           </div>
@@ -94,29 +104,25 @@
             </a>
           </div>
           <div class="guia">
-            <a href="./grupos.html" class="link">
-              <img src="./icons/multiple-users-silhouette.png" alt="" class="icon" />
-              <li>Grupos</li>
-              </a>
-          </div>
-          <div class="guia">
             <a href="./configuracoes.html" class="link">
-              <img src="./icons/edit.png" alt="" class="icon" />
+              <img src="./icons/gear.png" alt="" class="icon" />
               <li>Configurações</li>
-              </a>
+            </a>
           </div>
         </ul>
         <img
-            id="menu"
-            src="./icons/arrow-down-sign-to-navigate.png"
-            alt="arrow-down" />
+          id="menu"
+          src="./icons/arrow-down-sign-to-navigate.png"
+          alt="arrow-down" />
       </nav>
     </div>
     <div class="bigmain">
       <div class="sidebar">
         <div class="sidebarmain">
           <div class="voltar">
-            <a href="./index.html"><img src="./icons/left-arrow.png" alt="" /></a>
+            <a href="./index.html"
+              ><img src="./icons/left-arrow.png" alt=""
+            /></a>
             <p>Voltar</p>
           </div>
           <div class="iconessb">
@@ -158,8 +164,13 @@
           </div>
           <div class="box5">
             <div class="botao">
-                <button id="botao1" type="submit" style="margin-left: 50px;"><img class="imgtexto" src="./icons/addgrupo.png" alt=""><br>Criar Comunidade</button>
-                </div>
+              <button id="botao1" type="submit" style="margin-left: 50px">
+                <img
+                  class="imgtexto"
+                  src="./icons/addgrupo.png"
+                  alt="" /><br />Criar Comunidade
+              </button>
+            </div>
           </div>
         </div>
         <div class="resultados">

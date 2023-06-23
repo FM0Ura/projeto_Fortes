@@ -1,3 +1,5 @@
+/* Padrão aplicado no CSS dessa página! */
+
 /*Fontes importadas*/
 
 /*Poppins*/
@@ -25,9 +27,14 @@ body {
 }
 
 h3,
-h6,
 p {
   margin: 0%;
+  font-family: "PT Serif", serif;
+}
+
+h6 {
+  margin: 0%;
+  font-family: "Poppins", sans-serif;
 }
 /*FIM - Universal*/
 /*Cabeçalho*/
@@ -133,7 +140,7 @@ h4 {
 }
 
 #barra_navegacao {
-  width: 90%;
+  width: 95%;
   height: 6vh;
   background-color: #d9d9d9;
   border-radius: 10px;
@@ -145,11 +152,11 @@ h4 {
 
 ul {
   margin: 0%;
-  width: 93%;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
 }
 
@@ -167,28 +174,38 @@ li {
 }
 
 .guia {
-  width: 100%;
+  width: 50%;
   align-items: center;
   justify-content: center;
   display: flex;
   border-right: 1px solid black;
-  padding-left: 14px;
+  padding-left: 13px;
+  padding-right: 10px;
 }
 
 .guia:nth-last-child(1) {
   width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   display: flex;
   border-right: 0px solid black;
+  padding-left: 30px;
 }
 
 .guia:nth-child(1) {
-  width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   display: flex;
-  padding: 0px;
+  padding-left: 2px;
+}
+
+.guia:nth-child(6),
+.guia:nth-child(5) {
+  width: 60%;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  padding-left: 2%;
 }
 
 .menu-vertical {
@@ -197,6 +214,7 @@ li {
   justify-content: center;
   margin-bottom: 10px;
   display: none;
+  font-family: "Poppins", sans-serif;
 }
 
 .link {
@@ -350,14 +368,34 @@ main {
   height: 100%;
 }
 
-/*Caixas de noticias*/
+/*Caixas de#noticia1s*/
 
-.noticia {
+#noticia1 {
   align-items: center;
   width: 20%;
   height: 60%;
   border-radius: 30px;
-  background-color: #04BF8A;
+  background-image: url(/icons/not1.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+#noticia2 {
+  align-items: center;
+  width: 20%;
+  height: 60%;
+  border-radius: 30px;
+  background-image: url(/icons/not2.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+#noticia3 {
+  align-items: center;
+  width: 20%;
+  height: 60%;
+  border-radius: 30px;
+  background-image: url(/icons/not3.jpg);
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -368,14 +406,31 @@ main {
   width: 100%;
   height: 40%;
   border-radius: 30px;
-  background-color: #D9D9D9;
+  background-color: rgba(217, 217, 217, 0.58);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  padding-left: 20px;
+  color: white;
+}
+
+#info {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding-left: 20px;
+  justify-content: center;
 }
 
-/*FIM - Caixa de noticias*/
+.save {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*FIM - Caixa de#noticia1s*/
 
 /*Caixa de eventos*/
 
@@ -387,12 +442,32 @@ main {
   height: 100%;
 }
 
-.evento {
+#evento1 {
   align-items: center;
   width: 20%;
   height: 60%;
   border-radius: 30px;
-  background-color: #04BF8A;
+  background-image: url(/icons/eve1.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+#evento2 {
+  align-items: center;
+  width: 20%;
+  height: 60%;
+  border-radius: 30px;
+  background-image: url(/icons/eve2.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+#evento3 {
+  align-items: center;
+  width: 20%;
+  height: 60%;
+  border-radius: 30px;
+  background-image: url(/icons/eve3.jpg);
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -432,6 +507,7 @@ body {
   font-size: 10pt;
   color: black;
 }
+
 #vejamais {
   width: 100%;
   align-items: center;
@@ -480,7 +556,9 @@ hr {
   height: 100%;
 }
 /*FIM - Área Lateral*/
+
 /*Rodapé*/
+
 footer {
   align-items: center;
   justify-content: center;

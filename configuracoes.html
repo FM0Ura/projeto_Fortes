@@ -1,132 +1,126 @@
+<!-- Não há necessidade de implementar o padrão HTML implementado nessa página! -->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>configurações</title>
-  <link rel="stylesheet" href="./css/configuracoes.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Configurações</title>
+    <link rel="stylesheet" href="./css/configuracoes.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    rel="shortcut icon"
-    href="./icons/fortes-logo.png"
-    type="image/x-icon" />
-</head>
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="./icons/fortes-logo.png"
+      type="image/x-icon" />
+  </head>
 
-<body>
-  
-
-  <!-- MENU VERTICAL -->
-
-  <div class="menu-vertical">
-
-    <div class="topnav">
-      <a href="#" class="active"><img class="imga"
-          src="https://fortes.ind.br/wp-content/uploads/2022/08/FORTES_LOGOMARCA-300x91.png"></a>
-      <div id="myLinks">
-        <a href="./index.html">HOME</a>
-          <a href="./pagperfil.html">PÁGINA DE PERFIL</a>
-          <a href="./comunidades.html">COMUNIDADES</a>
-          <a href="./pgbuscatalentos.html">BUSCAR TALENTOS</a>
-          <a href="./ajudatrab.html">AJUDA NO TRABALHO</a>
-          <a href="./ajudaplat.html">AJUDA NA PLATAFORMA</a>
-      </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="iconvert"><img class="imgv" src="./icons/linhas.png"></i>
-      </a>
-    </div>
-  </div>
-
-  <div class="bigmain">
-    <div class="sidebar">
-      <div class="sidebarmain">
-        <div class="voltar">
-          <a href="./index.html"><img src="./icons/left-arrow.png" alt="" /></a>
-          <p>Voltar</p>
-        </div>
-        <br>
-        <div id="iconessb">
+  <body>
+    <div class="bigmain">
+      <div class="sidebar">
+        <div class="sidebarmain">
+          <div class="voltar">
+            <a href="./index.html"
+              ><img src="./icons/left-arrow.png" alt=""
+            /></a>
+            <p>Voltar</p>
+          </div>
+          <br />
+          <div id="iconessb">
             <div id="barra">
               <p>Personalização</p>
             </div>
             <hr />
           </div>
-        <br>
-        <div class="iconessb">
-          <p>Idiomas</p>
-        </div>
-        <br>
-        <div class="iconessb">
-          <p>Privacidade</p>
-        </div>
-        <br>
-        <div class="iconessb">
-          <p>Notificações</p>
-        </div>
-        <br>
-        <div class="iconessb">
-          <p>Segurança</p>
-        </div>
-        <br>
-        <div class="iconessb">
-          <p>Acessibilidade</p>
-        </div>
-      </div>
-    </div>
-    <div class="main">
-      <div class="busca">
-        <div class="box4">
-          <h1>Configurações</h1>
-
-          <div class="formzin">
-            <img src="./icons/magnifying-glass.png" alt="" />
-            <form>
-              <input type="text" id="textbusca" placeholder="Encontre o que está procurando..." />
-            </form>
-
+          <br />
+          <div class="iconessb">
+            <p>Idiomas</p>
+          </div>
+          <br />
+          <div class="iconessb">
+            <p>Privacidade</p>
+          </div>
+          <br />
+          <div class="iconessb">
+            <p>Notificações</p>
+          </div>
+          <br />
+          <div class="iconessb">
+            <p>Segurança</p>
+          </div>
+          <br />
+          <div class="iconessb">
+            <p>Acessibilidade</p>
           </div>
         </div>
-        <div class="box5">
-          <h1>Tema</h1>
-          <p>Altera a paleta de cores com a qual o site se basea no seu dispositivo. Essa configuração permite que você
-            sinta mais conforto em utilizar a plataforma por longos períodos de tempo e também se adapta ao seu gosto
-            pessoal.</p>
+      </div>
+      <div class="main">
+        <div class="busca">
+          <div class="box4">
+            <h1>Configurações</h1>
+
+            <div class="formzin">
+              <img src="./icons/magnifying-glass.png" alt="" />
+              <form>
+                <input
+                  type="text"
+                  id="textbusca"
+                  placeholder="Encontre o que está procurando..." />
+              </form>
+            </div>
+          </div>
+          <div class="box5">
+            <h1>Tema</h1>
+            <p>
+              Altera a paleta de cores com a qual o site se basea no seu
+              dispositivo. Essa configuração permite que você sinta mais
+              conforto em utilizar a plataforma por longos períodos de tempo e
+              também se adapta ao seu gosto pessoal.
+            </p>
             <div class="botaoconfig">
               <select name="tipo-de-tema" id="botao3">
-              <option value="tipo-de-tema">Padrão do Sistema</option>
-              <option value="tipo-de-tema">Tema Claro</option>
-              <option value="tipo-de-tema">Tema Escuro</option>
+                <option value="tipo-de-tema">Padrão do Sistema</option>
+                <option value="tipo-de-tema">Tema Claro</option>
+                <option value="tipo-de-tema">Tema Escuro</option>
               </select>
             </div>
-          <br>
-          <h1>Fontes</h1>
-          <p>Altera as configurações de fontes com a qual o site se basea no seu dispositivo. Isso permite que você
-            sinta mais conforto em utilizar a plataforma por longos períodos de tempo e também se adapta ao seu gosto
-            pessoal.</p>
+            <br />
+            <h1>Fontes</h1>
+            <p>
+              Altera as configurações de fontes com a qual o site se basea no
+              seu dispositivo. Isso permite que você sinta mais conforto em
+              utilizar a plataforma por longos períodos de tempo e também se
+              adapta ao seu gosto pessoal.
+            </p>
             <div class="botaoconfig">
-            <select name="tipo-de-fonte" id="botao3">
-            <option value="tipo-de-fonte">Pt Seriff, Poppins Regular</option>
-            <option value="tipo-de-fonte">Verdana, Sans-Serif</option>
-            <option value="tipo-de-fonte">Comic Sans MS, Comic Sans, cursive</option>
-            </select>
+              <select name="tipo-de-fonte" id="botao3">
+                <option value="tipo-de-fonte">
+                  Pt Seriff, Poppins Regular
+                </option>
+                <option value="tipo-de-fonte">Verdana, Sans-Serif</option>
+                <option value="tipo-de-fonte">
+                  Comic Sans MS, Comic Sans, cursive
+                </option>
+              </select>
             </div>
-            <br>
+            <br />
+          </div>
         </div>
-      </div>
-      <div class="resultados">
-        <div class="resultado1">
+        <div class="resultados">
+          <div class="resultado1">
             <div class="botao">
-              <button id="botao1" type="submit" style="margin-left: 50px;">Salvar Alterações</button>
+              <button id="botao1" type="submit" style="margin-left: 50px">
+                Salvar Alterações
+              </button>
               <button id="botao2" type="submit">Descartar</button>
             </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="./javascript/index.js"></script>
-</body>
-
+    <script src="./javascript/index.js"></script>
+  </body>
 </html>

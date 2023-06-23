@@ -5,13 +5,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pagina de Ajuda no Trabalho</title>
-    <link rel="stylesheet" href="./css/ajudatrab.css" />
+    <title>Padrão</title>
+    <link rel="stylesheet" href="padrao.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="shortcut icon"
-      href="./icons/fortes-logo.png"
-      type="image/x-icon" />
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
   </head>
+
   <body>
     <header>
       <!-- MENU VERTICAL -->
@@ -110,103 +112,6 @@
           alt="arrow-down" />
       </nav>
     </div>
-    <section class="duvidas">
-      <h1>Ajuda com seu trabalho?</h1>
-
-      <form>
-        <div id="divisao">
-          <div id="forms">
-            <input
-              type="text"
-              id="matricula"
-              name="matricula"
-              placeholder="Matrícula"
-              required />
-          </div>
-
-          <div id="forms">
-            <label for="nome"></label>
-            <input
-              type="text"
-              id="nome"
-              name="nome"
-              placeholder="Nome Completo"
-              class="input-medium"
-              required />
-          </div>
-
-          <div id="forms">
-            <label for="departamento"></label>
-            <input
-              type="text"
-              id="departamento"
-              name="departamento"
-              placeholder="Departamento"
-              class="input-medium"
-              required />
-          </div>
-        </div>
-
-        <div id="forms">
-          <label for="question"></label>
-          <textarea
-            id="question"
-            name="question"
-            placeholder="Descreva seu problema e como podemos ajuda-lo:"
-            rows="4"
-            required></textarea>
-        </div>
-      </form>
-
-      <div id="checkbox">
-        <h1>Com qual área deseja que seja realizada a comunicação?</h1>
-
-        <div id="container1">
-          <div id="grid-container">
-            <div id="bloco">
-              <div id="grid">
-                <input type="checkbox" id="opcao1" name="opcao1" />
-                <label for="opcao1">Financeiro</label>
-              </div>
-
-              <div id="grid">
-                <input type="checkbox" id="opcao2" name="opcao2" />
-                <label for="opcao2">Recursos Humanos</label>
-              </div>
-
-              <div id="grid">
-                <input type="checkbox" id="opcao3" name="opcao3" />
-                <label for="opcao3">Vendas</label>
-              </div>
-            </div>
-
-            <div id="bloco2">
-              <div id="grid">
-                <input type="checkbox" id="opcao4" name="opcao4" />
-                <label for="opcao4">Tecnologia</label>
-              </div>
-
-              <div id="grid">
-                <input type="checkbox" id="opcao5" name="opcao5" />
-                <label for="opcao5">Administrativo</label>
-              </div>
-
-              <div id="grid">
-                <input type="checkbox" id="opcao6" name="opcao6" />
-                <label for="opcao6">Jurídico</label>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <br />
-        <br />
-      </div>
-
-      <div id="botao">
-        <button type="submit">Enviar</button>
-      </div>
-    </section>
     <footer id="area_rodape">
       <div class="details">
         <h3>Privacidade</h3>

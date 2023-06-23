@@ -1,3 +1,6 @@
+/* Padrão CSS implementado nessa página! */
+/* Não necessidade de implementação do footer */
+
 /*Fontes importadas*/
 
 /*Poppins*/
@@ -137,7 +140,7 @@ h4 {
 }
 
 #barra_navegacao {
-  width: 90%;
+  width: 95%;
   height: 6vh;
   background-color: #d9d9d9;
   border-radius: 10px;
@@ -149,11 +152,11 @@ h4 {
 
 ul {
   margin: 0%;
-  width: 93%;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
 }
 
@@ -171,28 +174,38 @@ li {
 }
 
 .guia {
-  width: 100%;
+  width: 50%;
   align-items: center;
   justify-content: center;
   display: flex;
   border-right: 1px solid black;
-  padding-left: 14px;
+  padding-left: 13px;
+  padding-right: 10px;
 }
 
 .guia:nth-last-child(1) {
   width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   display: flex;
   border-right: 0px solid black;
+  padding-left: 30px;
 }
 
 .guia:nth-child(1) {
-  width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   display: flex;
-  padding: 0px;
+  padding-left: 2px;
+}
+
+.guia:nth-child(6),
+.guia:nth-child(5) {
+  width: 60%;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  padding-left: 2%;
 }
 
 .menu-vertical {
@@ -201,6 +214,7 @@ li {
   justify-content: center;
   margin-bottom: 10px;
   display: none;
+  font-family: "Poppins", sans-serif;
 }
 
 .link {
@@ -216,6 +230,8 @@ li {
 
 a {
   text-decoration: none;
+  display: flex;
+  flex-direction: row;
 }
 
 /*FIM - Barra de Navegação*/
@@ -324,46 +340,6 @@ a {
 }
 
 /*FIM - Barra de Navegação Mobile*/
-
-/*Rodapé*/
-footer {
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 10vh;
-  background-color: #d9d9d9;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-footer img {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  width: 200px;
-}
-
-.details {
-  height: 10vh;
-  width: 50%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.details h3 {
-  font-family: "PT Serif", serif;
-  font-size: medium;
-}
-
-.details p {
-  font-family: "Poppins", sans-serif;
-  font-size: small;
-}
-/*FIM - Rodapé*/
 
 body {
   padding: 0;
@@ -538,14 +514,14 @@ hr {
 
 #botao1 {
   padding: 5px 10px;
-  background-color: #084F8C;
+  background-color: #084f8c;
   color: #fff;
   border: none;
   cursor: pointer;
   width: 185px;
   height: 55px;
   border-radius: 30px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
 

@@ -1,9 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700&display=swap");
+/* Padrão CSS implementado nessa página! */
+
+/*Fontes importadas*/
+
+/*Poppins*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*font-family: 'Poppins', sans-serif;*/
+
+/*PT Serif*/
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/*font-family: 'PT Serif', serif;*/
+
+/*Universal*/
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  margin: 0%;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+
+h3,
+h6,
+p {
+  margin: 0%;
 }
 
 h1 {
@@ -22,6 +48,8 @@ h2 {
   font-weight: 400;
   line-height: 22, 5px;
 }
+
+/*FIM - Universal*/
 
 form {
   display: flex;
@@ -57,6 +85,12 @@ form {
   display: none;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 13px;
+}
+
 .conteudo p,
 .conteudo ol {
   margin-top: 10px;
@@ -88,6 +122,7 @@ form {
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #d9d9d9;
+  font-family: "Poppins", sans-serif;
 }
 
 #forms input[type="text"]::placeholder,
@@ -112,6 +147,8 @@ button[type="submit"] {
   width: 155px;
   height: 45px;
   border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13pt;
 }
 
 button[type="submit"]:hover {
@@ -145,22 +182,21 @@ textarea#question {
   justify-content: center;
 }
 
+/*Cabeçalho*/
 header {
-  width: 90%;
+  width: 100%;
   height: 13vh;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
 }
 
 #cabecalho {
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
-
   position: relative;
   display: flex;
   flex-direction: row-reverse;
@@ -169,18 +205,15 @@ header {
 .logo {
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
   display: flex;
 
   width: 250px;
-  position: absolute;
   left: 80vh;
 }
 
 #foto {
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
   display: flex;
   width: 70px;
   height: 70px;
@@ -190,7 +223,6 @@ header {
 #ON-OFF {
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
   display: flex;
   width: 40px;
   height: 40px;
@@ -199,7 +231,6 @@ header {
 .icon {
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
   display: flex;
   width: 30px;
   height: 30px;
@@ -208,7 +239,6 @@ header {
 #menu {
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
   display: flex;
   position: absolute;
   width: 30px;
@@ -219,7 +249,6 @@ header {
 #box {
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
   display: flex;
   width: 30%;
   height: 100%;
@@ -228,20 +257,24 @@ header {
 #botao {
   width: 100%;
   justify-content: center;
-  margin-bottom: 10px;
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
 }
 
 #box3 {
-  margin-bottom: 10px;
   width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+h4 {
+  margin: 0%;
+}
+/*FIM - Cabeçalho*/
+
+/*Barra de Navegação*/
 
 #box2 {
   width: 100%;
@@ -253,7 +286,6 @@ header {
 }
 
 #barra_navegacao {
-  margin-bottom: 10px;
   width: 95%;
   height: 6vh;
   background-color: #d9d9d9;
@@ -265,17 +297,16 @@ header {
 }
 
 ul {
-  margin-bottom: 10px;
-  width: 93%;
+  margin: 0%;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
 }
 
 li {
-  margin-bottom: 10px;
   width: 100%;
   height: 100%;
   list-style-type: none;
@@ -289,31 +320,38 @@ li {
 }
 
 .guia {
-  width: 100%;
+  width: 50%;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
   display: flex;
   border-right: 1px solid black;
-  padding-left: 14px;
+  padding-left: 13px;
+  padding-right: 10px;
 }
 
 .guia:nth-last-child(1) {
   width: 100%;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
+  justify-content: flex-start;
   display: flex;
   border-right: 0px solid black;
+  padding-left: 30px;
 }
 
 .guia:nth-child(1) {
-  width: 100%;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
+  justify-content: flex-start;
   display: flex;
-  padding: 0px;
+  padding-left: 2px;
+}
+
+.guia:nth-child(6),
+.guia:nth-child(5) {
+  width: 60%;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  padding-left: 2%;
 }
 
 .menu-vertical {
@@ -322,6 +360,7 @@ li {
   justify-content: center;
   margin-bottom: 10px;
   display: none;
+  font-family: "Poppins", sans-serif;
 }
 
 .link {
@@ -445,3 +484,47 @@ a {
 }
 
 /*FIM - Barra de Navegação Mobile*/
+
+/*Rodapé*/
+
+#area_rodape {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 10vh;
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer img {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  display: flex;
+  width: 200px;
+}
+
+.details {
+  height: 10vh;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.details h3 {
+  margin: 0%;
+  font-family: "PT Serif", serif;
+  font-size: medium;
+}
+
+.details p {
+  margin: 0%;
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+}
+/*FIM - Rodapé*/

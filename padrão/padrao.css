@@ -1,0 +1,381 @@
+/* Padrão CSS implementado nessa página! */
+
+/*Fontes importadas*/
+
+/*Poppins*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*font-family: 'Poppins', sans-serif;*/
+
+/*PT Serif*/
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/*font-family: 'PT Serif', serif;*/
+
+/*Universal*/
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+
+h3,
+h6,
+p {
+  margin: 0%;
+}
+/*FIM - Universal*/
+
+/*Cabeçalho*/
+header {
+  width: 100%;
+  height: 13vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#cabecalho {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.logo {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  width: 250px;
+  left: 80vh;
+}
+
+#foto {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+#ON-OFF {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 40px;
+  height: 40px;
+}
+
+.icon {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
+
+#menu {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 10px;
+}
+
+#box {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 30%;
+  height: 100%;
+}
+
+#botao {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+#box3 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h4 {
+  margin: 0%;
+}
+/*FIM - Cabeçalho*/
+
+/*Barra de Navegação*/
+
+#box2 {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  display: flex;
+  background-color: white;
+}
+
+#barra_navegacao {
+  width: 95%;
+  height: 6vh;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+ul {
+  margin: 0%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+li {
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  font-family: "Inter", sans-serif;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.guia {
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-right: 1px solid black;
+  padding-left: 13px;
+  padding-right: 10px;
+}
+
+.guia:nth-last-child(1) {
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  border-right: 0px solid black;
+  padding-left: 30px;
+}
+
+.guia:nth-child(1) {
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  padding-left: 2px;
+}
+
+.guia:nth-child(6),
+.guia:nth-child(5) {
+  width: 60%;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  padding-left: 2%;
+}
+
+.menu-vertical {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  display: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.link .icon {
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*FIM - Barra de Navegação*/
+
+/*Barra de Navegação Mobile*/
+
+@media (max-width: 800px) {
+  .menu {
+    height: 12vmax;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 1000px) {
+  .conteudo {
+    width: 95%;
+  }
+
+  .menu2 {
+    width: fit-content;
+  }
+
+  #foto {
+    width: 80%;
+    display: inline;
+  }
+
+  .menu {
+    height: 110px;
+  }
+
+  #box2 {
+    display: none;
+  }
+
+  .menu-vertical {
+    display: block;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    color: black;
+    border-radius: 10px;
+    height: 90px;
+  }
+
+  .topnav {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    background-color: #d9d9d9;
+    position: relative;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .topnav a.icon {
+    background: #d9d9d9;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    height: 90px;
+    background-color: #d9d9d9;
+    color: aliceblue;
+  }
+
+  .active {
+    color: #202022;
+  }
+
+  .imga {
+    width: 80%;
+  }
+
+  .imgv {
+    width: 40px;
+  }
+
+  .logo {
+    width: 100%;
+    height: 100%;
+  }
+
+  footer {
+    width: 100%;
+    height: fit-content;
+  }
+}
+
+/*FIM - Barra de Navegação Mobile*/
+
+/*Rodapé*/
+
+#area_rodape {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 10vh;
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer img {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  display: flex;
+  width: 200px;
+}
+
+.details {
+  height: 10vh;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.details h3 {
+  margin: 0%;
+  font-family: "PT Serif", serif;
+  font-size: medium;
+}
+
+.details p {
+  margin: 0%;
+  font-family: "Poppins", sans-serif;
+  font-size: small;
+}
+/*FIM - Rodapé*/
