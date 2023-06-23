@@ -375,7 +375,7 @@ main {
   width: 20%;
   height: 60%;
   border-radius: 30px;
-  background-image: url(/icons/not1.jpg);
+  background-image: url(./icons/not1.jpg);
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -385,7 +385,7 @@ main {
   width: 20%;
   height: 60%;
   border-radius: 30px;
-  background-image: url(/icons/not2.jpg);
+  background-image: url(./icons/not2.jpg);
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -395,7 +395,7 @@ main {
   width: 20%;
   height: 60%;
   border-radius: 30px;
-  background-image: url(/icons/not3.jpg);
+  background-image: url(./icons/not3.jpg);
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -447,7 +447,7 @@ main {
   width: 20%;
   height: 60%;
   border-radius: 30px;
-  background-image: url(/icons/eve1.jpg);
+  background-image: url(./icons/eve1.jpg);
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -457,7 +457,7 @@ main {
   width: 20%;
   height: 60%;
   border-radius: 30px;
-  background-image: url(/icons/eve2.jpg);
+  background-image: url(./icons/eve2.jpg);
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -467,7 +467,7 @@ main {
   width: 20%;
   height: 60%;
   border-radius: 30px;
-  background-image: url(/icons/eve3.jpg);
+  background-image: url(./icons/eve3.jpg);
   display: flex;
   flex-direction: column;
   justify-content: end;
