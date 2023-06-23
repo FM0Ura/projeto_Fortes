@@ -1,6 +1,4 @@
-
 /*Criação das tabelas do esquema*/
-
 
 -- Criação da tabela skills
 
@@ -10,7 +8,7 @@ CREATE TABLE public.skills (
                 tipo VARCHAR(4) NOT NULL,
                 CONSTRAINT skills_pk PRIMARY KEY (skill_id)
 );
---Comentários nos metadados da tabela:
+-- Comentários nos metadados da tabela:
 COMMENT ON TABLE public.skills IS 'tabela que lista todas as skills';
 COMMENT ON COLUMN public.skills.skill_id IS 'identificador unico da skill';
 COMMENT ON COLUMN public.skills.nome IS 'nome da skill';
@@ -26,7 +24,7 @@ CREATE TABLE public.interesses (
 --Comentários nos metadados da tabela:
 COMMENT ON TABLE public.interesses IS 'tabela que lista todos os interesses';
 COMMENT ON COLUMN public.interesses.interesse_id IS 'identificador unico do interesse';
-COMMENT ON COLUMN public.interesses.nome IS 'nome da skill';
+COMMENT ON COLUMN public.interesses.nome IS 'nome do interesse';
 
 
 -- Criação da tabela hobbies
@@ -35,10 +33,10 @@ CREATE TABLE public.hobbies (
                 nome VARCHAR NOT NULL,
                 CONSTRAINT hobbies_pk PRIMARY KEY (hobby_id)
 );
---Comentários nos metadados da tabela:
+-- Comentários nos metadados da tabela:
 COMMENT ON TABLE public.hobbies IS 'tabela que lista todos os hobbies';
 COMMENT ON COLUMN public.hobbies.hobby_id IS 'identificador unico do hobby';
-COMMENT ON COLUMN public.hobbies.nome IS 'nome da skill';
+COMMENT ON COLUMN public.hobbies.nome IS 'nome do hobbie';
 
 
 -- Criação da tabela enderecos

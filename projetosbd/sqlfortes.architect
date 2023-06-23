@@ -19,8 +19,8 @@
     <column id="COL3" populated="true" UUID="6d8ad7b5-9b85-47d2-a20d-72391f489484" autoIncrement="false" autoIncrementSequenceName="usuario_1_nome_seq" defaultValue="" name="prim_nome" nullable="0" physicalName="prim_nome" precision="32" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks>primeiro nome do funcionário</remarks>
     </column>
-    <column id="COL4" populated="true" UUID="047b0c1c-274b-4e91-8458-3549bc05a65d" autoIncrement="false" autoIncrementSequenceName="usuario_sobrenomes_seq" defaultValue="" name="sobrenomes" nullable="0" physicalName="sobrenomes" precision="40" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
-     <remarks>sobrenomes (talvez dividir em 1ºsobrenome e resto do sobrenome e permitir null)</remarks>
+    <column id="COL4" populated="true" UUID="047b0c1c-274b-4e91-8458-3549bc05a65d" autoIncrement="false" autoIncrementSequenceName="usuario_sobrenomes_seq" defaultValue="" name="sobrenomes" nullable="0" physicalName="sobrenomes" precision="100" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks>sobrenomes</remarks>
     </column>
     <column id="COL5" populated="true" UUID="b39297ca-79cd-4c0c-b1f3-8352493b371e" autoIncrement="false" autoIncrementSequenceName="usuario_dpt_id_seq" defaultValue="" name="departamento" nullable="0" physicalName="departamento" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks>identificador do departamento</remarks>
@@ -31,7 +31,7 @@
     <column id="COL7" populated="true" UUID="7aa17b99-3ba8-4b33-b282-5286f5a7c3b5" autoIncrement="false" autoIncrementSequenceName="usuario_endereco_id_seq" defaultValue="" name="endereco_id" nullable="0" physicalName="endereco_id" precision="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks>identificador unico do endereço</remarks>
     </column>
-    <column id="COL8" populated="true" UUID="a1359d62-9935-4f73-ab61-9a34945602bb" autoIncrement="false" autoIncrementSequenceName="usuario_genero_seq" defaultValue="" name="genero" nullable="0" physicalName="genero" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL8" populated="true" UUID="a1359d62-9935-4f73-ab61-9a34945602bb" autoIncrement="false" autoIncrementSequenceName="usuario_genero_seq" defaultValue="" name="genero" nullable="0" physicalName="genero" precision="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks>genero do funcionário</remarks>
     </column>
     <column id="COL9" populated="true" UUID="4eefba51-e82e-414b-ad70-c789be28d170" autoIncrement="false" autoIncrementSequenceName="usuario_cargo_id_seq" defaultValue="" name="cargo_id" nullable="0" physicalName="cargo_id" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
@@ -84,7 +84,8 @@
      <remarks>identificador unico do hobby</remarks>
     </column>
     <column id="COL22" populated="true" UUID="29f370e0-c5cb-4b5d-9ce3-5db803d8b751" autoIncrement="false" autoIncrementSequenceName="hobbies_nome_seq" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
-     <remarks>nome da skill</remarks>
+     <remarks>nome do hobbie
+</remarks>
     </column>
     </folder>
     <folder id="FOLTAB203" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
@@ -125,7 +126,7 @@
      <remarks>identificador unico do interesse</remarks>
     </column>
     <column id="COL33" populated="true" UUID="2d23bb1c-c37e-4823-94b2-5b005d0b5046" autoIncrement="false" autoIncrementSequenceName="interesses_nome_seq" defaultValue="" name="nome" nullable="0" physicalName="nome" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
-     <remarks>nome da skill</remarks>
+     <remarks>nome do interesse</remarks>
     </column>
     </folder>
     <folder id="FOLTAB313" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
@@ -227,18 +228,18 @@
    </relationship>
   </relationships>
  </target-database>
- <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="false" target-schema="public"> </ddl-generator>
+ <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="true" target-schema="public"> </ddl-generator>
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
- <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
-  <table-pane table-ref="TAB1" x="744" y="337" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB14" x="767" y="151" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB20" x="272" y="172" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB25" x="336" y="360" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB31" x="1277" y="253" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB36" x="691" y="643" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB42" x="1018" y="639" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB48" x="1139" y="426" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+ <play-pen zoom="1.414213562373095" viewportX="138" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB1" x="541" y="268" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB14" x="564" y="82" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB20" x="69" y="103" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB25" x="133" y="291" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB31" x="1074" y="184" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB36" x="488" y="574" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB42" x="815" y="570" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB48" x="936" y="357" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-link relationship-ref="REL62" pkConnection="0.551094890510949" fkConnection="0.44680851063829785" rLineColor="0x2e3436" pkLabelText="" fkLabelText="" orientation="132"/>
   <table-link relationship-ref="REL54" pkConnection="0.4105691056910569" fkConnection="0.7564102564102564" rLineColor="0x2e3436" pkLabelText="" fkLabelText="" orientation="18"/>
   <table-link relationship-ref="REL56" pkConnection="0.5" fkConnection="0.47435897435897434" rLineColor="0x2e3436" pkLabelText="" fkLabelText="" orientation="33"/>
